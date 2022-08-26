@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.main.HomeFragment"
+    android:padding="10dp">
+
+    <!--<Button android:id="@+id/homeMultiFunBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text=""
+        android:textColor="@color/white"/>-->
+
+    <!--<TextView android:id="@+id/hometxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home"
+        android:textSize="50sp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        tools:ignore="RelativeOverlap" />-->
+
+    <View android:id="@+id/homeTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+    </View>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvpPosts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/homeTopBar" />
+
+</RelativeLayout>

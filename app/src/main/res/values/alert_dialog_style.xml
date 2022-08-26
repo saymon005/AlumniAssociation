@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlertDialogTheme" parent="@style/Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">#3C3C3C</item>
+        <item name="android:textColor">#8C8C8C</item>
+        <item name="android:textColorPrimary">#676767</item>
+        <item name="colorAccent">#C3C3C3</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/AlertPositiveButton</item>
+    </style>
+
+    <style name="AlertPositiveButton">
+        <item name="android:layout_weight">@integer/material_motion_duration_short_1</item>
+    </style>
+</resources>

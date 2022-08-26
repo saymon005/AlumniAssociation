@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!---
+    <group android:checkableBehavior="none">
+        <item android:id="@+id/settings"
+            android:enabled="true"
+            android:title="@string/settings"
+            android:icon="@drawable/ic_baseline_settings_24"/>
+    </group>
+    -->
+
+    <item  android:title="@string/account">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item android:id="@+id/profile"
+                    android:title="@string/profile"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_baseline_person_24"/>
+
+                <item android:id="@+id/signin"
+                    android:enabled="true"
+                    android:title="@string/sign_in"
+                    android:icon="@drawable/ic_baseline_login_24"/>
+
+                <item android:id="@+id/signup"
+                    android:enabled="true"
+                    android:title="@string/sign_up"
+                    android:icon="@drawable/ic_baseline_app_registration_24"/>
+
+                <item android:id="@+id/adminpanel"
+                    android:enabled="true"
+                    android:title="@string/admin_panel"
+                    android:visible="false"
+                    android:icon="@drawable/ic_baseline_manage_accounts_24"/>
+
+                <item android:id="@+id/chat"
+                    android:enabled="true"
+                    android:title="@string/chat"
+                    android:visible="false"
+                    android:icon="@drawable/ic_baseline_mark_unread_chat_alt_24"/>
+
+                <item android:id="@+id/verify"
+                    android:enabled="true"
+                    android:title="@string/verify_email"
+                    android:visible="false"
+                    android:icon="@drawable/ic_baseline_warning_24"/>
+
+                <item android:id="@+id/signout"
+                    android:enabled="true"
+                    android:title="@string/log_out"
+                    android:visible="false"
+                    android:icon="@drawable/ic_baseline_logout_24"/>
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

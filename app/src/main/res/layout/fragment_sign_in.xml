@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@color/black"
+    android:paddingHorizontal="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_back"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_above="@id/header"
+        android:layout_centerHorizontal="true"/>
+    <TextView android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:divider="@drawable/empty_divider"
+        android:layout_below="@id/header">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            app:startIconDrawable="@drawable/ic_baseline_mail_outline_24"
+            style="@style/custom" >
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textCursorDrawable="@drawable/text_cursor"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck"
+                android:autofillHints="" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pass_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            app:counterMaxLength="20"
+            app:counterEnabled="true"
+            app:counterTextColor="@color/white"
+            app:passwordToggleEnabled="true"
+            style="@style/custom"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24" >
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:maxLength="20"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textCursorDrawable="@drawable/text_cursor"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck"
+                android:autofillHints="" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button android:id="@+id/signinbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#494949"
+            android:text="@string/log_in"
+            android:textSize="18sp"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:divider="@drawable/empty_divider">
+
+            <TextView android:id="@+id/create_account_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/create_account"
+                android:textColor="@color/clickable_text"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck"
+                android:focusable="true" />
+
+            <TextView android:id="@+id/forgot_pass_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/forgot_password"
+                android:textColor="@color/clickable_text"
+                android:layout_weight=".5"
+                android:textAlignment="viewEnd"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck"
+                android:focusable="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

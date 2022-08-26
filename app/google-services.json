@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "635740949431",
+    "firebase_url": "https://alumni-database-978cd-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "alumni-database-978cd",
+    "storage_bucket": "alumni-database-978cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635740949431:android:c7d61caed350bf9a1bf632",
+        "android_client_info": {
+          "package_name": "com.dayencreation.alumni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635740949431-f9riofmiunbt97hl4b3sfqnstbsnbel2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGY2bmmAWzsewVd_rIC05Z8Ud29FligPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635740949431-f9riofmiunbt97hl4b3sfqnstbsnbel2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

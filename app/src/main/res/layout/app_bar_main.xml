@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView android:id="@+id/postBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_baseline_post_add_24"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/clickable_text"/>
+        <!--
+        <ImageView android:id="@+id/filterBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_baseline_filter_list_24"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/clickable_text"/>
+
+        <EditText
+            android:id="@+id/searchTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/filterBtn"
+            android:background="@drawable/edit_background"
+            android:ems="9"
+            android:hint="Search by id"
+            android:padding="5dp"
+            android:textColorHint="#A3A3A3"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView android:id="@+id/searchBtn"
+            android:layout_marginStart="5dp"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_toEndOf="@id/searchTxt"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_baseline_search_24"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_centerVertical="true"
+            app:tint="@color/clickable_text"/>-->
+
+    </RelativeLayout>
+
+    <include layout="@layout/activity_second" />
+
+</RelativeLayout>

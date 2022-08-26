@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:enabled="true"
+        android:title="@string/home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    <item android:id="@+id/friends"
+        android:enabled="true"
+        android:title="@string/friends"
+        android:icon="@drawable/ic_baseline_people_alt_24"/>
+
+    <item android:id="@+id/notification"
+        android:enabled="true"
+        android:title="@string/notification"
+        android:icon="@drawable/ic_baseline_notifications_none_24"/>
+
+    <item android:id="@+id/menu"
+        android:enabled="true"
+        android:title="@string/menu"
+        android:icon="@drawable/ic_baseline_menu_24"/>
+
+</menu>

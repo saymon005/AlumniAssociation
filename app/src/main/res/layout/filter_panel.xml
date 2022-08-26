@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="10dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView android:id="@+id/filtersearch_by_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search By"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:popupBackground="#A8A8A8"
+            android:layout_marginStart="20dp"
+            android:id="@+id/spinnerSearchBy"
+            android:spinnerMode="dialog"
+            android:background="#979797" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView android:id="@+id/filterUniDropDownTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/university"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:popupBackground="#A8A8A8"
+            android:id="@+id/spinnerFUni"
+            android:layout_marginStart="20dp"
+            android:spinnerMode="dialog"
+            android:background="#979797" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView android:id="@+id/filterdeptDropDownTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/department"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:popupBackground="#A8A8A8"
+            android:id="@+id/spinnerFDept"
+            android:layout_marginStart="20dp"
+            android:spinnerMode="dialog"
+            android:background="#979797" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView android:id="@+id/filtergradTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/department"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <EditText android:id="@+id/filtergratyrEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="15sp"
+            android:ems="10"
+            android:background="@drawable/edit_background"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView android:id="@+id/filterssnDropDownTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/department"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:popupBackground="#A8A8A8"
+            android:id="@+id/spinnerFDSsn"
+            android:layout_marginStart="20dp"
+            android:spinnerMode="dialog"
+            android:background="#979797" />
+
+    </LinearLayout>
+
+    <Button android:id="@+id/filtersave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#303030"
+        android:text="save"/>
+    <Button android:id="@+id/filtercancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#303030"
+        android:text="Cancel"/>
+
+</LinearLayout>
